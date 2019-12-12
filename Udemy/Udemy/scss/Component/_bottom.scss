@@ -1,0 +1,14 @@
+.btn--white{
+    @include bottom($color-gray-4,$color-white-0,$fw-bold-0,$fs-0);
+    border: 1px solid $color-gray-4;
+    &:hover{
+        border: 1px solid $color-gray-4;
+    }
+}
+
+.btn--red{
+    @include bottom($color-white-0,$color-red-0,$fw-bold-0,$fs-0);
+    &:hover{
+        background-color: $color-red-1;
+    }
+}

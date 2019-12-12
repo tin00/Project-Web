@@ -1,0 +1,27 @@
+.mycategories {
+  padding-top: $mg-2;
+  width: 80%;
+  margin: 0 auto;
+  h2 {
+    @include text($color-black-0, $fs-3, $fw-bold-0);
+  }
+  .categories__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .categories__item {
+      padding: $pd-2 0;
+      box-shadow: 0px 2px 8px 0px rgba(20, 23, 28, 0.1);
+      transition: all 0.5s;
+      margin-right: $fs-2;
+      margin-bottom: $fs-2;
+      &:hover {
+        box-shadow: 0px 8px 8px 0px rgba(20, 23, 28, 0.1);
+      }
+      i {
+        @include text($color-black-0, $fs-3 + 6, $fw-bold-1);
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

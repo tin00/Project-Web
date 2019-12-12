@@ -1,0 +1,75 @@
+.our {
+  background-color: #F7F8FA;
+  .owl-carousel .owl-nav button.owl-prev{
+      left: -25px;
+  }
+  .owl-carousel .owl-nav button.owl-next{
+      right: -25px;
+  }
+  .our__content {
+    h1 {
+      @include text($color-black-0, $fs-3, $fw-bold);
+      padding-top: 40px;
+      padding-bottom: 20px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .our__couse {
+      width: 80%;
+      margin: 0 auto;
+      .our__couse-item {
+        background-color: $color-white-0;
+        padding: $pd-2 + 20;
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: initial;
+          margin-bottom: 20px;
+        }
+        .couse__item-1 {
+          @include text($color-black-0, $fs-0, $fw-bold);
+        }
+      }
+    }
+  }
+
+  .Trusted {
+    .mylogo {
+      text-align: center;
+      p {
+        @include text($color-gray-4, $fs-1, $fw-normal);
+        padding-top: 40px;
+      }
+      img {
+        margin: 20px 40px;
+      }
+    }
+
+    .Trusted__content {
+      text-align: center;
+      .Trusted__teach {
+        border-left: 1px solid $color-gray-4;
+        h3{
+            @include text($color-black-light,$fs-2 - 1,$fw-bold-0);
+        }
+        p {
+          width: 45%;
+          margin: 0 auto;
+          padding: $pd-2;
+        }
+        .Trusted__business{
+            @include text($color-white-0,$fs-0,$fw-bold-0);
+            background-color: $color-red-0;
+            border: 1px solid $color-red-0;
+            transition: all .5s;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+            &:hover{
+                background-color: $color-red-1;
+            }
+        }
+      }
+    }
+  }
+}

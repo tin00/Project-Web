@@ -1,0 +1,44 @@
+.myStudents {
+  margin-top: $mg-2;
+  
+  .Students__content {
+    width: 80%;
+    margin: 0 auto;
+    .p {
+        @include text($color-black-0, $fs-2, $fw-normal);
+      }
+
+    .Students__course {
+      .card-title {
+        @include text($color-black-0, $fs-1, $fw-normal);
+      }
+      .card-text {
+        @include text($color-gray-4, $fs-1, $fw-normal);
+      }
+      .rating {
+        .rating__star {
+          @include text($color-yellow, $fs-1, $fw-normal);
+          margin-right: $mg-1;
+        }
+        span:nth-child(2) {
+          @include text($color-gray-4, $fs-1, $fw-bold);
+          margin-right: $mg-1;
+        }
+        span:last-child {
+          @include text($color-gray-4, $fs-1, $fw-normal);
+        }
+      }
+      .price {
+        text-align: right;
+        margin-top: $mg-2;
+        .old-price {
+          @include text($color-gray-4, $fs-1, $fw-normal);
+          text-decoration: line-through;
+        }
+        .new-price {
+          @include text($color-black-0, $fs-0, $fw-bold);
+        }
+      }
+    }
+  }
+}

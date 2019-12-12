@@ -1,0 +1,42 @@
+.myGet {
+  border-top: 7px solid $color-purple;
+  background-color: $color-black-0;
+  height: 400px;
+  .get__conten {
+    padding-top: 130px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+      @include text($color-white-0, $fs-3, $fw-bold-0);
+      margin-bottom: $mg-1 + 6;
+      line-height: 1.33em;
+    }
+    p {
+      @include text($color-white-0, $fs-0, $fw-normal);
+      margin-bottom: $mg-1 + 6;
+    }
+    .get__button {
+      @include text($color-white-0, $fs-0, $fw-normal);
+      background-color: $color-red-0;
+      padding: $pd-1 $pd-2;
+      border: 1px solid $color-red-0;
+      &:hover{
+          background-color: $color-red-1;
+          border: 1px solid $color-red-1;
+      }
+    }
+    .get__conten-item {
+      justify-content: space-around;
+      font-size: 30px;
+    }
+    .items--1 {
+      margin-top: -70px;
+      margin-bottom: 50px;
+    }
+    .item--2 {
+      margin-top: 50px;
+    }
+  }
+}
